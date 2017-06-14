@@ -17,20 +17,23 @@
 			color: #333;
 			background: #efeee7;
 		}
+
 		header {
 			background: #333;
 		}
+
 		h1 {
-			padding: 20px 0;
-			margin: 0:
-			margin-bottom: 20px;
+			padding: 30px;
+			margin: 0;
 			font-size: 28px;
 			color: #eee;
-			text-align: center;
+			text-align: center; 
 		}
-		h2 {
+
+		h2, h3 {
 			font-size: 24px;
 		}
+
 		a {
 			color: d21034;
 		}
@@ -38,6 +41,31 @@
 			width: 1024px;
 			margin: 0 auto;
 		}
+		#main-bio,
+		#bio-image, #contact-info {
+			float: left;			
+		}
+
+		#bio-image {
+			width: 20%;
+		}
+
+		#main-bio {
+			width: 40%;
+			margin-right: 20px;
+			padding-top: 25px;
+		}
+
+		#contact-info {
+			width: 30%;
+			
+		}
+		#bio-image {
+			margin-right: 20px;
+			clear: both;
+			overflow: auto;
+		}
+
 		</style>
 
 	</head>
@@ -46,21 +74,27 @@
 		<header>
 		<h1>Student Bio</h1>
 		</header>
-		<div>
-			<section>
-				<h2>Michael Nedwick</h2>
-				<img src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/18767905_10158903880995691_3420076158407427059_n.jpg?oh=3069c53cb744e26566d9f8976b62dd1a&oe=599DE81B" alt="MichaelNedwick" style="width:200px;height:200px;">
-				<br>
 
-				<p>I'm Michael Nedwick. Originally from Santa Clarita, CA but have lived all over the US and in several different countries overseas.  Currently working on a startup which I hope to launch around October/November this year.</p>
+		<div class="container">
+			
+			<section id="bio-image">
+			<h2>Michael Nedwick</h2>
 
-				<h3>Contact Info</h3>
-		
+				<img src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/18767905_10158903880995691_3420076158407427059_n.jpg?oh=3069c53cb744e26566d9f8976b62dd1a&oe=599DE81B" alt="Michael Nedwick" style="width:200px;height:200px;">
+			</section>
+
+			<section id="main-bio"
+
+				<p>I'm Michael Nedwick. Originally from Santa Clarita, CA but have lived all over the US and in several different countries overseas.  Currently working on a startup which I hope to launch around October/November this year.</p>				
+			</section>
+
+			<section id="contact-info">	
+			<h3>Contact Info</h3>
 				<ul>
 				<li><strong>Email: </strong> <a href="michael.galt.1984@gmail.com">michael.galt.1984@gmail.com</a></li>
 				<li><strong>Github: </strong><a href="https://github.com/michaelgalt1984">https://github.com/michaelgalt1984</a></li>
-				<li><strong>Portfolio:</strong><a href="coming soon">coming soon</a></li>
-				</ul>
+				<li><strong>Portfolio:</strong><a href="#">coming soon</a></li>
+				</ul></style>
 			</section>
 		</div>
 	</body>
